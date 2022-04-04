@@ -7,7 +7,7 @@
 */
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -71,6 +71,11 @@ input, select, textarea {
 	appearance: none;
 }
 
+iframe {
+	width: 50%;
+	margin-bottom: 2%
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -128,6 +133,9 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 13pt;
 			}
+			iframe {
+				width: 560px;
+			}
 
 		}
 
@@ -135,6 +143,10 @@ input, select, textarea {
 
 			body, input, select, textarea {
 				font-size: 12pt;
+			}
+			iframe {
+				width: auto;
+				height: 100%;
 			}
 
 		}
@@ -144,7 +156,10 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 11pt;
 			}
-
+			iframe {
+				width: auto;
+				height: 100%;
+			}
 		}
 
 	a {
@@ -234,6 +249,8 @@ input, select, textarea {
 	h6 {
 		font-size: 0.6em;
 	}
+
+
 
 	@media screen and (max-width: 736px) {
 
@@ -815,6 +832,8 @@ input, select, textarea {
 						}
 
 		}
+
+
 
 		@media screen and (max-width: 1280px) {
 
